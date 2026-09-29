@@ -10,7 +10,7 @@ num_votantes = int(input("Introduce el número de votantes: "))
 
 for i in range(num_votantes):
 
-    print("\nCandidatos disponibles:")
+    print("Candidatos disponibles:")
 
     for candidato in votos:
         print("-", candidato)
@@ -23,7 +23,7 @@ for i in range(num_votantes):
 
     votos[voto] += 1
 
-print("\n--- RESULTADOS ---")
+print("\RESULTADOS")
 
 for candidato in votos:
     print(candidato, ":", votos[candidato], "votos")
@@ -37,11 +37,11 @@ for candidato in votos:
         ganadores.append(candidato)
 
 if len(ganadores) == 1:
-    print("\nEl ganador es:", ganadores[0])
+    print("El ganador es:", ganadores[0])
     print("Número de votos:", max_votos)
 
 else:
-    print("\nHay un empate entre:")
+    print("Hay un empate entre:")
 
     for candidato in ganadores:
         print("-", candidato)
